@@ -1,7 +1,7 @@
 # api-camera
 API CAMERA RETRO HABBBO
 
-## SQL
+### SQL
 
 DROP TABLE IF EXISTS `camera_photos`;
 CREATE TABLE `camera_photos` (
@@ -18,7 +18,7 @@ CREATE TABLE `camera_photos` (
 
 INSERT INTO `furniture` (`id`, `item_name`, `public_name`, `type`, `width`, `length`, `stack_height`, `can_stack`, `can_sit`, `is_walkable`, `sprite_id`, `allow_recycle`, `allow_trade`, `allow_marketplace_sell`, `allow_gift`, `allow_inventory_stack`, `interaction_type`, `behaviour_data`, `interaction_modes_count`, `vending_ids`, `height_adjustable`, `effect_id`, `wired_id`, `is_rare`, `clothing_id`, `extra_rot`) VALUES ('777954881', 'external_image_wallitem_poster', 'Photo', 'i', '1', '1', '0', '1', '0', '0', '777954881', '1', '1', '1', '1', '1', 'camera_picture', '0', '1', '0', '0', '0', '0', '0', '0', '0');
 
-### EXTERNAL VARIABLES
+#### EXTERNAL VARIABLES
 
 navigator.thumbnail.url_base=${image.library.url}/camera/navigator-thumbnail/hhus/
 stories.image_url_base=${image.library.url}/camera/
