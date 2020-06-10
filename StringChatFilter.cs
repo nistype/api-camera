@@ -6,10 +6,10 @@ namespace Plus.Utilities
     static class StringCharFilter
     {
         /// <summary>
-        /// Escapes the characters used for injecting special chars from a user input.
+        /// Échappe les caractères utilisés pour injecter des caractères spéciaux à partir d'une entrée utilisateur.
         /// </summary>
-        /// <param name="str">The string/text to escape.</param>
-        /// <param name="allowBreaks">Allow line breaks to be used (\r\n).</param>
+        /// <param name="str">La chaîne / le texte à échapper.</param>
+        /// <param name="allowBreaks">Autoriser l'utilisation des sauts de ligne (\r\n).</param>
         /// <returns></returns>
         public static string Escape(string str, bool allowBreaks = false)
         {
