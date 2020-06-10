@@ -21,19 +21,19 @@ namespace Plus.HabboHotel.Rooms.Camera
         public void RenderImage(byte[] data, bool isThumbnail, Habbo habbo)
         {
             CameraRender render = new CameraRender(isThumbnail);
-            //decompress the json data
+            // décompresse les données json
             string jsonData = CameraUtils.InflateString(data);
-            //parsing the planes from the json file and setting them to the render
+            // analyser les plans du fichier json et les définir sur le rendu
             render.Planes = CameraUtils.ParsePlanes(jsonData);
-            //parsing the sprites from the json file and setting them to the render
+            //analyser les images-objets du fichier json et les définir sur le rendu
             render.Sprites = CameraUtils.ParseSprites(jsonData);
-            //parsing the filters from the json file and setting them to the render
+            //analyser les filtres du fichier json et les définir sur le rendu
             render.Filters = CameraUtils.ParseFilters(jsonData);
-            //rendering the image
+            //rendre l'image
             render.Begin();
-            //saving the image
+            //enregistrer l'image
             string filename  = CameraUtils.SaveImage(jsonData, render);
-            //disposing the garbage!
+            //delete
             render.Dispose();
             
             if (!isThumbnail)
